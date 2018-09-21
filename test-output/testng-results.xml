@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="248" started-at="2018-09-21T02:31:02Z" finished-at="2018-09-21T02:31:03Z">
+  <suite name="Default suite" duration-ms="648" started-at="2018-09-21T06:31:15Z" finished-at="2018-09-21T06:31:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="248" started-at="2018-09-21T02:31:02Z" finished-at="2018-09-21T02:31:03Z">
-      <class name="selenium.web.automation.JDBCConnectionMySql">
-        <test-method status="PASS" signature="jdbcConnection()[pri:0, instance:selenium.web.automation.JDBCConnectionMySql@46daef40]" name="jdbcConnection" duration-ms="224" started-at="2018-09-21T02:31:03Z" finished-at="2018-09-21T02:31:03Z">
+    <test name="Default test" duration-ms="648" started-at="2018-09-21T06:31:15Z" finished-at="2018-09-21T06:31:16Z">
+      <class name="selenium.web.automation.JDBCConnectionSQL">
+        <test-method status="PASS" signature="jdbcConnection()[pri:0, instance:selenium.web.automation.JDBCConnectionSQL@13c27452]" name="jdbcConnection" duration-ms="628" started-at="2018-09-21T06:31:15Z" finished-at="2018-09-21T06:31:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jdbcConnection -->
-      </class> <!-- selenium.web.automation.JDBCConnectionMySql -->
+      </class> <!-- selenium.web.automation.JDBCConnectionSQL -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

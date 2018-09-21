@@ -4,10 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-
+import java.sql.ResultSet;
 import org.testng.annotations.Test;
 
-import com.mysql.jdbc.ResultSet;
 
 public class JDBCConnectionMySql {
 
@@ -25,7 +24,7 @@ public class JDBCConnectionMySql {
 			System.out.println("Connected to the database test1");
 
 			Statement st = con.createStatement();
-			ResultSet rs = (ResultSet) st.executeQuery("select * from tblEmployee");
+			ResultSet rs = st.executeQuery("select * from tblEmployee");
 
 			while (rs.next()) {
 
