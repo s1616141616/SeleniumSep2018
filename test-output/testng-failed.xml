@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.web.automation.Google_Search">
+      <class name="selenium.web.automation.JDBCConnectionMySql">
         <methods>
-          <include name="CheckSearchResult"/>
+          <include name="jdbcConnection"/>
         </methods>
-      </class> <!-- selenium.web.automation.Google_Search -->
+      </class> <!-- selenium.web.automation.JDBCConnectionMySql -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,33 @@
+1.	Dynamic xPath for input
+
+	//input[@class='classname']
+	//input[@id=''idname]
+	//input[@name='name']
+	//input[@value='value']
+ 	//input[contains(@class,'classvalue')]
+ 	//input[contains(@id,'idvalue')]
+ 	//input[starts-with(@id,'idvalue')]
+ 	//input[ends-with(@id,'idvalue')]
+ 
+ 2.	Dynamic xPath for link
+ 
+ 	//a[contains(text(),'textvalue')]
+ 	//a[contains(text=)]
+ 	
+3.	Dynamic xPath for button
+
+ 	//*[starts-with(@id,'idvalue')]
+ 	//*[ends-with(@id,'idvalue')]
+ 	
+ 	//button[@type='' and @class='classname']
+ 	//button[contains(text(),'textvalue')]
+ 	
+ 	//a[@title='value']
+ 	//a[@href='http://www.xyz.com']
+ 	//img[contains(@src,'')]
+ 	//div[contains(@id,'')]
+ 	
+ 4.Multiple Attribute
+ 
+ 	//input[@class='name'] [@name='name']
+ 	//*[text()='textvalue']//following::tagname[contains(@href,'hrefvalue')][]

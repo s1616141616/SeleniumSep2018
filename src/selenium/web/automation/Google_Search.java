@@ -1,14 +1,15 @@
 package selenium.web.automation;
 
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.annotations.Test;
+
+import com.google.inject.Key;
 
 public class Google_Search {
 
@@ -17,14 +18,14 @@ public class Google_Search {
 
 		String search = "Bangladesh Bank";
 
-		System.setProperty("webdriver.gecko.driver", "D:\\eclipse-workspace\\July2018\\src\\Driver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "D:/eclipse-workspace/SeleniumPractice/Driver/geckodriver.exe");
 
 		WebDriver fxDriver = new FirefoxDriver();
 
 		fxDriver.manage().deleteAllCookies();
 		fxDriver.get("https://www.google.com");
-		fxDriver.findElement(By.xpath("//input[@name=\"q\"]")).sendKeys(Keys.SHIFT, search);
-		fxDriver.findElement(By.xpath("//input[@name='btnK']")).click();
+		fxDriver.findElement(By.xpath("//input[@name=\"q\"]")).sendKeys(search, Keys.TAB, Keys.ENTER);
+		//fxDriver.findElement(By.xpath("//input[@name='btnK']")).click();
 
 		java.util.List<WebElement> results = fxDriver.findElements(By.cssSelector(".r"));
 		java.util.List<WebElement> results1 = fxDriver.findElements(By.tagName("a"));
