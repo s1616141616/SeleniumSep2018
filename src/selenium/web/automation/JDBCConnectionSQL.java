@@ -25,7 +25,7 @@ public class JDBCConnectionSQL {
 			System.out.println("===============================");
 
 			Statement st = con.createStatement();
-			ResultSet rs = st.executeQuery("select * from tblEmployee");
+			ResultSet rs = st.executeQuery("select * from tblDepartment");
 
 			while (rs.next()) {
 				System.out.println("DepID: " + rs.getString(1) + " DepName: " + rs.getString(2) + " City: "

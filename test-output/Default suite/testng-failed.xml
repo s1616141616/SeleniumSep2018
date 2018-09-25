@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.web.automation.JDBCConnectionSQL">
+      <class name="selenium.web.automation.ReadWriteDataFromXL">
         <methods>
-          <include name="jdbcConnection"/>
+          <include name="readWriteXLFileTest"/>
         </methods>
-      </class> <!-- selenium.web.automation.JDBCConnectionSQL -->
+      </class> <!-- selenium.web.automation.ReadWriteDataFromXL -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
