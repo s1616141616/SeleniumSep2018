@@ -8,6 +8,7 @@
 	//input[contains(@id,'idvalue')]
 	//input[starts-with(@id,'idvalue')]
 	//input[ends-with(@id,'idvalue')]
+	//span[contains(@class,'ssp-icon-masthead icon-search')]
  
 2.	Dynamic xPath for link
  
